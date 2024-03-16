@@ -1,4 +1,4 @@
-# Mentor-Student Management API
+# Mentor👩🏻‍💻 and Student👩🏻‍🎓 Assigning with Database🛢️
 This project is a simple API for managing mentors and students. It allows you to create, retrieve, update mentors and students from a MongoDB database.
 # Features
 🖊️Create Basic Info About API /:
