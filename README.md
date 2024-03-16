@@ -1,6 +1,5 @@
 # Mentor-Student Management API
 This project is a simple API for managing mentors and students. It allows you to create, retrieve, update mentors and students from a MongoDB database.
-
 # Features
 🖊️Create Basic Info About API /:
 
@@ -47,7 +46,6 @@ You can retrieve all students or mentors by sending a GET request to the /studen
 🔗https://assign-mentor-2jsx.onrender.com/mentors
 
 🔗https://assign-mentor-2jsx.onrender.com/students
-
 # Technologies Used
 Node.js, 
 Express.js, 
@@ -55,23 +53,35 @@ MongoDB,
 Mongoose.
 # Getting Started
 Clone the repository: git clone <repository-url>
-Install dependencies: npm install
-Set up environment variables by creating a .env file in the root directory with the following content:
-makefile
-Copy code
-PORT=3000
-MONGODB_URI=<your-mongodb-uri>
-Start the server: npm start
-Use Postman or any API testing tool to interact with the API.
 
+Install dependencies: npm install
+
+Set up environment variables by creating a .env file in the root directory with the following content:
+
+makefile
+
+PORT=<your-port>
+
+MONGODB_URI=<your-mongodb-uri>
+
+Start the server: npm start
+
+Use Postman or any API testing tool to interact with the API.
 # API Endpoints
 POST /mentors: Create a new mentor
+
 POST /students: Create a new student
+
 PUT /mentors/:mentorId/students: Assign students to a mentor
-PUT /students/:studentId/mentor/:mentorId: Assign a mentor to a student
+
+PUT /students/:studentId/mentor/:mentorId: Assign Mentor for Particular Student
+
 GET /mentors/:mentorId/students: Get all students assigned to a mentor
+
 GET /students/:studentId/previous-mentor: Get the previous mentor of a student
+
 GET /students: Get all students
+
 GET /mentors: Get all mentors
 
 
