@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Define the Student schema
 const studentSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -18,7 +18,7 @@ const studentSchema = new mongoose.Schema({
     ref: 'Mentor',
   },
 });
-
+// Create the Student model based on the schema
 const Student = mongoose.model('Student', studentSchema);
 
 module.exports = Student;

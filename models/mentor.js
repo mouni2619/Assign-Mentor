@@ -1,24 +1,5 @@
-//  const mongoose = require('mongoose');
-
-// const mentorSchema = new mongoose.Schema({
-//   name: {
-//     type: String,
-//     required: true,
-//   },
-//   expertise: {
-//     type: String,
-//     required: true,
-//   },
-//   students: [{
-//     type: mongoose.Schema.Types.ObjectId,
-//     ref: 'Student',
-//   }],
-// });
-
-// const Mentor = mongoose.model('Mentor', mentorSchema);
-
-// module.exports = Mentor;
 const mongoose = require('mongoose');
+// Define the Mentor schema
 const mentorSchema = new mongoose.Schema({
     name: {
       type: String,
@@ -30,7 +11,7 @@ const mentorSchema = new mongoose.Schema({
     },
     students: [{
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Student',
+      ref: 'Student',// Reference to the Student model
     }],
     maxStudents: {
       type: Number,
@@ -39,7 +20,7 @@ const mentorSchema = new mongoose.Schema({
     },
   });
   
-
+// Create the Mentor model based on the schema
 const Mentor = mongoose.model('Mentor', mentorSchema);
 
 module.exports = Mentor;
