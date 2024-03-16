@@ -1,6 +1,6 @@
 # Mentor👩🏻‍💻 and Student👩🏻‍🎓 Assigning with Database🛢️
 This project is a simple API for managing mentors and students. It allows you to create, retrieve, update mentors and students from a MongoDB database.
-# Features
+## Features
 🖊️Create Basic Info About API /:
 
 🔗https://assign-mentor-2jsx.onrender.com
@@ -46,12 +46,12 @@ You can retrieve all students or mentors by sending a GET request to the /studen
 🔗https://assign-mentor-2jsx.onrender.com/mentors
 
 🔗https://assign-mentor-2jsx.onrender.com/students
-# Technologies Used
+## Technologies Used
 Node.js, 
 Express.js, 
 MongoDB, 
 Mongoose.
-# Getting Started
+## Getting Started
 Clone the repository: git clone <repository-url>
 
 Install dependencies: npm install
@@ -60,14 +60,14 @@ Set up environment variables by creating a .env file in the root directory with 
 
 makefile
 
-PORT=<your-port>
+PORT=your-port
 
-MONGODB_URI=<your-mongodb-uri>
+MONGODB_URI=your-mongodb-uri
 
 Start the server: npm start
 
 Use Postman or any API testing tool to interact with the API.
-# API Endpoints
+## API Endpoints
 POST /mentors: Create a new mentor
 
 POST /students: Create a new student
