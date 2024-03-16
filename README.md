@@ -1,10 +1,8 @@
-## Mentor-Student Management API
+# Mentor-Student Management API
 This project is a simple API for managing mentors and students. It allows you to create, retrieve, update mentors and students from a MongoDB database.
 
 # Features
-📖GET /:
-
-Here I provided the URL to get the basic information about the API
+🖊️Create Basic Info About API /:
 
 🔗https://assign-mentor-2jsx.onrender.com
 
@@ -20,20 +18,41 @@ To assign students to a mentor, send a PUT request to the /mentors/:mentorId/stu
 
 To assign a mentor to a particular student, send a PUT request to the /students/:studentId/mentor/:mentorId endpoint, where :studentId is the ID of the student and :mentorId is the ID of the mentor you want to assign to the student.
 
-📖Retrieve Students by Mentor:
+📖Retrieve All Students Data for Particular Mentor:
 
 You can retrieve all students assigned to a specific mentor by sending a GET request to the /mentors/:mentorId/students endpoint.
-Retrieve Previous Mentor of Student: To retrieve the previous mentor of a student, send a GET request to the /students/:studentId/previous-mentor endpoint, where :studentId is the ID of the student.
+
+🔗https://assign-mentor-2jsx.onrender.com/mentors/65f48262cec74c0f54808015/students
+
+🔗https://assign-mentor-2jsx.onrender.com/mentors/65f48245cec74c0f54808013/students
+
+🔗https://assign-mentor-2jsx.onrender.com/mentors/65f48277cec74c0f54808017/students
+
+📖Retrieve Previous Mentor of Student:
+
+To retrieve the previous mentor of a student, send a GET request to the /students/:studentId/previous-mentor endpoint, where :studentId is the ID of the student.
+
+🔗https://assign-mentor-2jsx.onrender.com/students/65f481f1cec74c0f5480800b/previous-mentor
+
+🔗https://assign-mentor-2jsx.onrender.com/students/65f48216cec74c0f5480800d/previous-mentor
+
+🔗https://assign-mentor-2jsx.onrender.com/students/65f48223cec74c0f5480800f/previous-mentor
+
+🔗https://assign-mentor-2jsx.onrender.com/students/65f4822ccec74c0f54808011/previous-mentor
 
 📖Retrieve All Students/Mentors:
 
 You can retrieve all students or mentors by sending a GET request to the /students or /mentors endpoints, respectively.
 
+🔗https://assign-mentor-2jsx.onrender.com/mentors
+
+🔗https://assign-mentor-2jsx.onrender.com/students
+
 # Technologies Used
-Node.js
-Express.js
-MongoDB
-Mongoose
+Node.js, 
+Express.js, 
+MongoDB, 
+Mongoose.
 # Getting Started
 Clone the repository: git clone <repository-url>
 Install dependencies: npm install
